@@ -42,8 +42,16 @@ nav {
     /* margin-bottom: 20px; */
 }
 
+.pfp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
 .logo {
     height: 40px;
+    border-radius: 20px;
 }
 
 .nav-links {
@@ -168,7 +176,7 @@ nav {
 .card-buttons {
     display: flex;
     gap: 10px;
-    padding: 15px;
+    /* padding: 15px; */
 }
 
 .btn-primary {
@@ -187,6 +195,104 @@ nav {
 
 .btn-secondary:hover {
     background-color: #bdbdbd;
+}
+
+footer {
+    background-color: #fff9ec;
+    color: #7234fa;
+    padding: 40px 20px;
+    margin-top: 18px;
+    border-top: 1px solid black;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-logo {
+    width: 40px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 9px #c0bcbc,
+        -3px -3px 9px #ffffff;
+    margin-right: 15px;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #4CAF50;
+}
+
+.footer-section.about p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-section.contact p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-section.contact i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.comment-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: #45a049;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #444;
 }
 
 @media (max-width: 768px) {
@@ -226,5 +332,14 @@ nav {
     .btn {
         width: 100%;
         text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-section {
+        min-width: 100%;
     }
 }

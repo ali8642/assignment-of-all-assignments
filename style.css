@@ -88,24 +88,6 @@ nav {
     border: none;
 }
 
-.btn-login {
-    background-color: #e0e0e0;
-    color: #333;
-}
-
-.btn-login:hover {
-    background-color: #bdbdbd;
-}
-
-.btn-register {
-    background-color: #7234fa;
-    color: white;
-}
-
-.btn-register:hover {
-    background-color: #5d2ac7;
-}
-
 .hamburger {
     display: none;
     cursor: pointer;
